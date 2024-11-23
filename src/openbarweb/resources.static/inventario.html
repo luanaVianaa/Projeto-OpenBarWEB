@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário - OpenBar</title>
+    <link rel="stylesheet" href="./css/inventario.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <script src="./js/scriptInventario.js" defer></script>
+</head>
+<body>
+    <header class="menu">
+        <nav class="menu-container">
+            <ul class="menu-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="PaginaCadastroCardapio.html">Cadastro de Cardápio</a></li>
+                <li><a href="cadastroPedidos.html">Novo Pedido</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+            <button class="btn-sair" onclick="sair()">Sair</button>
+        </nav>
+    </header>
+<main>
+        <section class="conteiner">
+            <h1>Inventário</h1>
+            <form id="formInventario">
+                <div class="input-group">
+                    <label for="nomeItem">Nome do Produto:</label>
+                    <input type="text" id="nomeItem" name="nomeItem" placeholder="Ex: Refrigerante, Embalagem" required>
+                </div>
+                <div class="input-group">
+                    <label for="tipoItem">Tipo:</label>
+                    <select id="tipoItem" name="tipoItem" required>
+                        <option value="">Selecione o tipo</option>
+                        <option value="Alimento">Alimento</option>
+                        <option value="Embalagem">Embalagem</option>
+                        <option value="Condimento">Condimento</option>
+                        <option value="Bebida">Bebida</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="quantidadeItem">Quantidade:</label>
+                    <input type="number" id="quantidadeItem" name="quantidadeItem" placeholder="Ex: 50" min="0" required>
+                </div>
+                <button type="button" class="btn" id="adicionarItem">Adicionar</button>
+            </form>
+
+            <h2>Estoque Atual</h2>
+            <table class="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Tipo</th>
+                        <th>Quantidade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="inventarioList">
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+   
+</body>
+</html>
+
