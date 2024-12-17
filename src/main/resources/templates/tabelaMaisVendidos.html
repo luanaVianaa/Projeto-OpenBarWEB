@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\css\tabelaItens.css">
+        <link rel="stylesheet" href="C:/Users/pfvrl/OneDrive/Documentos/Netbeans/Atividade9-PI/src/main/resources/static.css/menu.css">
+        <title>Itens Mais Vendidos - OpenBar</title>
+    </head>
+    <body>
+        <header class="menu">
+            <nav class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="paginaCadastroCardapio.html">Cadastro de Cardápio</a></li>
+                    <li><a href="cadastroPedido.html">Novo Pedido</a></li>
+                    <li><a href="inventario.html">Inventário</a></li>
+                    <li><a href="listarPedidos.html">Lista de Pedidos</a></li>
+                    <li><a href="listaCardapio.html">Cardápio</a></li>
+                    <li><a href="relatorioVendas.html">Relatórios</a></li>
+                </ul>
+                <button class="btn-sair" onclick="sair()">Sair</button>
+            </nav>
+        </header>
+        <section class="container">
+            <h2>Itens Mais Vendidos</h2>
+            <label for="mes">Mês:</label>
+            <input type="number" id="mes" placeholder="Mês (1-12)">
+            <label for="ano">Ano:</label>
+            <input type="number" id="ano" placeholder="Ano">
+            <button id="buscarItensMaisVendidos" class="btn">Buscar</button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantidade</th>
+                        <th>Total de Vendas</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaItens">
+                    <!-- Os dados serão preenchidos aqui -->
+                </tbody>
+            </table>
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\maisVendidos.js"></script>
+    </body>
+</html>

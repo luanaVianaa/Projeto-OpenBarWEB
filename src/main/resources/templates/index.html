@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Inicial - OpenBar</title>
+        <link rel="stylesheet" href="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\css\index.css">
+        <link rel="stylesheet" href="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\css\menu.css">
+    </head>
+    <body>
+        <header class="menu">
+            <nav class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="paginaCadastroCardapio.html">Cadastro de Cardápio</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="listaCardapio.html">Cardápio</a></li>
+                    <li><a href="relatorioVendas.html">Relatórios</a></li>
+                </ul>
+                <button class="btn-sair" onclick="sair()">Sair</button>
+            </nav>
+        </header>
+        <main>
+            <section class="container">
+                <h1>Bem-vindo(a) <span th:text="${userName}"></span>!</h1>
+                <p>Resumo das atividades recentes:</p>
+                <ul>
+                    <li>Pedidos pendentes: <span th:text="${pedidosPendentes}">0</span></li>
+                    <li>Pedidos realizados hoje: <span th:text="${pedidosRealizadosHoje}">0</span></li>
+                    <li><a href="listarPedidos.html" class="btn">Lista de Pedidos</a></li>
+                    <li><a href="itensMaisVendidos.html" class="btn">Itens Mais Vendidos</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <script src="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\scriptIndex.js"></script>
+    </body>
+</html>

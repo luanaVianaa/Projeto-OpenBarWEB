@@ -1,0 +1,74 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #d5a6ff, #ffc048);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.btn-remover {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-remover:hover {
+    background-color: darkred;
+}
+
+h1{
+    text-align: center;
+    color: #6c5ce7;
+}
+.cardapio-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.conteiner {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 100px auto;
+}
+.cardapioTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cardapioTable th, .cardapioTable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.cardapioTable th {
+    background: #6c5ce7;
+    color: white;
+}
+
+.cardapio-item h3 {
+    color: #6c5ce7;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cardapio-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+.cardapio-item p strong {
+    color: #6c5ce7;
+}

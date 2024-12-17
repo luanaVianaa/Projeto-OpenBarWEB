@@ -1,0 +1,84 @@
+/* Estilos do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #d5a6ff, #ffc048);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    width: 80%; /* Aumenta a largura do container */
+    max-width: 900px; /* Limita a largura máxima */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px; /* Mais espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+}
+
+/* Tabela de pedidos */
+table {
+    width: 100%; /* Tabela ocupa toda a largura */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Borda mais leve */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #6c5ce7; /* Cor de fundo roxa para os cabeçalhos */
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9; /* Cor de fundo leve para as células */
+}
+
+/* Botões */
+.btn {
+    background-color: #6c5ce7; /* Cor roxa */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px; /* Espaço acima do botão */
+}
+
+.btn:hover {
+    background-color: #341f97; /* Cor mais escura no hover */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+/* Input de checkbox */
+input[type="checkbox"] {
+    transform: scale(1.3); /* Aumenta o tamanho do checkbox */
+    cursor: pointer;
+}
+
+/* Ajusta a aparência das colunas na tabela */
+td input[type="checkbox"] {
+    margin: 0 auto;
+}

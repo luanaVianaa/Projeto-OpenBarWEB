@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\css\relatorio.css">
+        <link rel="stylesheet" href="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\css\menu.css">
+    <title>Relatório - OpenBar</title>
+</head>
+<body>
+    <header class="menu">
+        <nav class="menu-container">
+            <ul class="menu-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="paginaCadastroCardapio.html">Cadastro de Cardápio</a></li>
+                <li><a href="cadastroPedido.html">Novo Pedido</a></li>
+                <li><a href="inventario.html">Inventário</a></li>
+                <li><a href="listarPedidos.html">Lista de Pedidos</a></li>
+                <li><a href="listaCardapio.html">Cardápio</a></li>
+                <li><a href="relatorioVendas.html">Relatórios</a></li>
+            </ul>
+            <button class="btn-sair" onclick="sair()">Sair</button>
+        </nav>
+    </header>
+    <section class="container">
+        <h2>Relatórios</h2>
+        <div>
+            <h3>Relatório Diário</h3>
+            <label for="dataRelatorio">Data (AAAA-MM-DD):</label>
+            <input type="date" id="dataRelatorio">
+            <button class="btn" id="gerarRelatorioDia">Gerar Relatório Diário</button>
+        </div>
+        <div>
+            <h3>Relatório Mensal</h3>
+            <label for="mesRelatorio">Mês:</label>
+            <input type="number" id="mesRelatorio" placeholder="Mês (1-12)">
+            <label for="anoRelatorio">Ano:</label>
+            <input type="number" id="anoRelatorio" placeholder="Ano">
+            <button class="btn" id="gerarRelatorioMes">Gerar Relatório Mensal</button>
+        </div>
+        <a href="tabelaMaisVendidos.html" class="btnItem">Itens Mais Vendidos</a>
+        <div id="resultadoRelatorio"></div>
+    </section>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\scriptRelatorio.js"></script>
+    </body>
+</html>

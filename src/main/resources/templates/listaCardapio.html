@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Cardápios - OpenBar</title>
+    <link rel="stylesheet" href="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\Atividade9-PI\src\main\resources\static.css\style.css">
+    <link rel="stylesheet" href="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\css\cardapioLista.css">
+    <link rel="stylesheet" href="C:/Users/pfvrl/OneDrive/Documentos/Netbeans/Atividade9-PI/src/main/resources/static.css/menu.css">
+</head>
+<body>
+      <header class="menu">
+            <nav class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="paginaCadastroCardapio.html">Cadastro de Cardápio</a></li>
+                    <li><a href="cadastroPedido.html">Novo Pedido</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="listarPedidos.html">Lista de Pedidos</a></li>
+                    <li><a href="listaCardapio.html">Cardápio</a></li>
+                    <li><a href="relatorioVendas.html">Relatórios</a></li>
+                </ul>
+                <button class="btn-sair" onclick="sair()">Sair</button>
+            </nav>
+        </header>
+ <main>
+        <section class="conteiner">
+            <h1>Itens do Cardápio</h1>
+            <table id="cardapioTable" class="cardapioTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os itens serão inseridos aqui via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\scriptListarCardapio.js"></script>
+</body>
+</html>

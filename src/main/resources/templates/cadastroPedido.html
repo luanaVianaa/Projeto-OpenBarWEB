@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de Pedido - OpenBar</title>
+        <link rel="stylesheet" href="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\Atividade9-PI\src\main\resources\static.css\pedidos.css"> 
+        <link rel="stylesheet" href="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\Atividade9-PI\src\main\resources\static.css\menu.css">
+    </head>
+    <body>
+        <header class="menu">
+            <nav class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="paginaCadastroCardapio.html">Cadastro de Cardápio</a></li>
+                    <li><a href="cadastroPedido.html">Novo Pedido</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="listarPedidos.html">Lista de Pedidos</a></li>
+                    <li><a href="listaCardapio.html">Cardápio</a></li>
+                    <li><a href="relatorioVendas.html">Relatórios</a></li>
+                </ul>
+                <button class="btn-sair" onclick="sair()">Sair</button>
+            </nav>
+        </header>
+         <section class="container">
+        <h1>Pedido</h1>
+        <div class="dados-cliente">
+            <h2>Dados do Cliente:</h2>
+            <form id="formCliente">
+                <input type="text" id="nomeCliente" name="nomeCliente" placeholder="Digite o nome do cliente" required>
+                <input type="tel" id="telefoneCliente" name="telefoneCliente" placeholder="(XX) XXXXX-XXXX" required>
+            </form>
+        </div>
+        <div class="cardapio">
+            <h2>Itens do Cardápio:</h2>
+            <button id="btnCarregarCardapio" class="btn">Exibir Cardápio</button>
+            <ul id="listaCardapio">
+                <!-- Itens do cardápio carregados aqui -->
+            </ul>
+        </div>
+        <div class="resumo">
+            <h2>Resumo do Pedido:</h2>
+            <p><strong>Valor Total:</strong> <span id="valorTotal">R$ 0.00</span></p>
+            <button class="btn" id="realizarPedido">Realizar Pedido</button>
+        </div>
+    </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script src="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\scriptPedido.js"></script>
+    </body>
+</html>

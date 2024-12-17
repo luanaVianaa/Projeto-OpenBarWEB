@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Listagem de Pedidos - OpenBar</title>
+        <link rel="stylesheet" href="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\css\pedidos.css">
+        <link rel="stylesheet" href="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\css\menu.css">
+    </head>
+    <body>
+        <header class="menu">
+            <nav class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="paginaCadastroCardapio.html">Cadastro de Cardápio</a></li>
+                    <li><a href="cadastroPedido.html">Novo Pedido</a></li>
+                    <li><a href="inventario.html">Inventário</a></li>
+                    <li><a href="listarPedidos.html">Lista de Pedidos</a></li>
+                    <li><a href="listaCardapio.html">Cardápio</a></li>
+                    <li><a href="relatorioVendas.html">Relatórios</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="container">
+    <h1>Pedidos Pendentes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cliente</th>
+                <th>Itens</th>
+                <th>Status</th>
+                <th>Ações</th> 
+            </tr>
+        </thead>
+        <tbody id="pedidosTabela">
+          
+        </tbody>
+    </table>
+
+    <button class="btn" id="concluirTodos">Concluir</button>
+</section>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="C:\Users\pfvrl\OneDrive\Documentos\Netbeans\openBarWebPI\src\main\resources\static\scriptListarPedidos.js"></script>
+    </body>
+</html>
